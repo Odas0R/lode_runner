@@ -9,4 +9,6 @@ to make it open source.
 
 It still needs some work, there's some bugs that I would like to fix.
 
+## [Test the game](https://odas0r.github.io/lode_runner/)
+
 **I do not own this game**.
