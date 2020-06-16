@@ -11,6 +11,6 @@ It still needs some work, there's some bugs that I would like to fix.
 
 ## Test the game:
 
-[HERE](https://odas0r.github.io/lode_runner/)
+[HERE](https://lode-runner.netlify.app/)
 
 **I do not own this game**.
