@@ -1,0 +1,413 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: "Press Start 2P", cursive;
+	background-color: black;
+	overflow: hidden;
+}
+
+header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+form {
+	width: 506px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+form input {
+	display: inline-block;
+	border: none;
+	font-family: "Press Start 2P", cursive;
+	font-size: 1.3rem;
+	outline: none;
+	margin: 0 14px;
+	padding: 12px;
+	width: 140px;
+	text-align: center;
+}
+
+form .stats {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 20px 0;
+	color: #a62626;
+}
+
+form .stats span {
+	color: white;
+}
+
+canvas {
+	margin: 0 auto;
+	background-color: white;
+}
+
+h1 {
+	color: white;
+}
+
+h2 {
+	padding-top: 30px;
+}
+
+.center {
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.authors {
+	padding-left: 0;
+	text-align: center;
+}
+
+.authors li {
+	padding: 10px;
+}
+
+.game-title {
+	text-align: center;
+	margin: 70px 0;
+	font-size: 2.5rem;
+}
+
+.how-to-play {
+	padding-top: 10px;
+	margin: 0 auto;
+	width: 100%;
+	color: white;
+}
+
+.how-to-play ul {
+	list-style-type: none;
+	padding-top: 20px;
+}
+
+.how-to-play ul li {
+	margin: 10px 0;
+}
+
+.how-to-play ul li .fix-align {
+	display: inline;
+	margin-left: 41px;
+}
+
+.how-to-play ul li .fix-align-1 {
+	display: inline;
+	margin-left: 10px;
+}
+
+.how-to-play ul li .fix-align-esc {
+	display: inline;
+	margin-left: 73px;
+}
+
+.how-to-play ul li .fix-align-r {
+	display: inline;
+	margin-left: 121px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.fix-size {
+	font-size: 1.4rem;
+}
+
+.fix-font {
+	font-family: sans-serif;
+	font-size: 1.4rem;
+}
+
+.sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 60px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.sidebar a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.sidebar a:hover {
+	color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 32px;
+	margin-left: 50px;
+	outline: none;
+	border: none;
+	background-color: #111;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	font-family: "Press Start 2P", cursive;
+}
+
+.sidebar .closebtn:hover {
+	color: #a62626;
+}
+
+li:hover {
+	color: #a62626;
+}
+
+.openbtn {
+	cursor: pointer;
+	color: black;
+	border: none;
+	padding: 10px;
+	font-family: "Press Start 2P", cursive;
+	font-size: 1.2rem;
+	outline: none;
+}
+
+.openbtn:hover {
+	color: #a62626;
+}
+
+#side-bar-icon {
+	-webkit-transition: margin-left 0.5s;
+	-o-transition: margin-left 0.5s;
+	transition: margin-left 0.5s;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.game-buttons {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidebar {
+		padding-top: 15px;
+	}
+
+	.sidebar a {
+		font-size: 18px;
+	}
+}
+
+.canvas-container {
+	width: 100%;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	position: relative;
+}
+
+.canvas-layer {
+	width: 506px;
+	height: 274px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#message {
+	position: absolute;
+	top: 40%;
+	left: 25%;
+	color: #a62626;
+	text-align: center;
+	font-size: 2rem;
+	-webkit-animation: pulse 5s infinite;
+	animation: pulse 5s infinite;
+	z-index: 3;
+}
+
+.reset-buttons {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-top: 140px;
+}
+
+.reset-buttons input {
+	width: 20%;
+	cursor: pointer;
+}
+
+.reset-buttons input:hover {
+	color: #a62626;
+}
+
+.hide {
+	display: none;
+}
+
+.fix-reset {
+	top: 20% !important;
+	left: 5% !important;
+}
+
+.fix-won {
+	top: 28% !important;
+	left: 3% !important;
+}
+
+#level-lost {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 500ms;
+	-o-transition: all 500ms;
+	transition: all 500ms;
+	-webkit-animation: fillIn 3s;
+	animation: fillIn 3s;
+}
+
+/* Animation */
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: translateY(-0px);
+		transform: translateY(-0px);
+	}
+
+	50% {
+		-webkit-transform: translateY(-12px);
+		transform: translateY(-12px);
+	}
+
+	75% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		-webkit-transform: translateY(-0px);
+		transform: translateY(-0px);
+	}
+
+	50% {
+		-webkit-transform: translateY(-12px);
+		transform: translateY(-12px);
+	}
+
+	75% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+
+@-webkit-keyframes fillIn {
+	0% {
+		-webkit-box-shadow: inset 0 0 0 25px #000;
+		box-shadow: inset 0 0 0 25px #000;
+	}
+
+	25% {
+		-webkit-box-shadow: inset 0 0 0 50px #000;
+		box-shadow: inset 0 0 0 50px #000;
+	}
+
+	75% {
+		-webkit-box-shadow: inset 0 0 0 75px #000;
+		box-shadow: inset 0 0 0 75px #000;
+	}
+
+	100% {
+		-webkit-box-shadow: inset 0 0 0 140px #000;
+		box-shadow: inset 0 0 0 140px #000;
+	}
+}
+
+@keyframes fillIn {
+	0% {
+		-webkit-box-shadow: inset 0 0 0 25px #000;
+		box-shadow: inset 0 0 0 25px #000;
+	}
+
+	25% {
+		-webkit-box-shadow: inset 0 0 0 50px #000;
+		box-shadow: inset 0 0 0 50px #000;
+	}
+
+	75% {
+		-webkit-box-shadow: inset 0 0 0 75px #000;
+		box-shadow: inset 0 0 0 75px #000;
+	}
+
+	100% {
+		-webkit-box-shadow: inset 0 0 0 140px #000;
+		box-shadow: inset 0 0 0 140px #000;
+	}
+}

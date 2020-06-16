@@ -1,0 +1,104 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Lode Runner
+	</title>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/main.css">
+
+</head>
+
+
+<body onload="loadGame()">
+	<!-- HEADER -->
+	<header>
+		<!-- SIDE-BAR ICON -->
+		<div id="side-bar-icon">
+			<button id="open-nav" class="openbtn">(HELP)</button>
+		</div>
+		<!-- SIDE-BAR ICON -->
+	</header>
+	<!-- GAME -->
+	<div class="center">
+
+		<h1 class="game-title">Lode Runner</h1>
+		<form name="form1">
+			<div class="container">
+				<div class="canvas-container">
+					<canvas id="canvas1" width="504" height="272" style="border:1px solid #000000;">
+						<h1>HEY</h1>
+					</canvas>
+					<div class="canvas-layer">
+						<div id="message" class="hide">
+
+						</div>
+						<div class="reset-buttons hide">
+							<input type="button" id="yes-reset" value="YES" />
+							<input type="button" id="no-reset" value="NO" />
+						</div>
+						<div id="level-lost" class="hide">
+						</div>
+					</div>
+				</div>
+				<div class="stats">
+					<div class="score">
+						SCORE <span id="score-value">0000000</span>
+					</div>
+					<div class="men">
+						MEN <span id="men-value">000</span>
+					</div>
+					<div class="level">
+						LEVEL <span id="level-value">001</span>
+					</div>
+				</div>
+				<div class="game-buttons">
+					<input id="play" type="button" value="LOADING...">
+					<input id="reset" type="button" value="RESET">
+					<input id="level" type="number" placeholder="LEVEL" max="16" min="1" minlength="1" maxlength="2"
+						onkeydown="submitLevelInput(event)">
+				</div>
+			</div>
+		</form>
+
+	</div>
+	<!-- GAME -->
+
+	<!-- INSIDE SIDE-BAR -->
+	<div id="mySidebar" class="sidebar">
+		<button id="close-nav" class="closebtn">&times;</button>
+		<div class="how-to-play">
+			<h2 class="text-center">How To Play</h2>
+			<ul>
+				<li>O, J, <span class="fix-size">&#8592</span> - MOVE LEFT</li>
+				<li>P, L, <span class="fix-size">&#8594</span> - MOVE RIGHT</li>
+				<li>Q, I, <span class="fix-font">&#8593</span>
+					<div class="fix-align-1">- MOVE UP</div>
+				</li>
+				<li>A, K, <span class="fix-font">&#8595</span>
+					<div class="fix-align-1">
+						- MOVE DOWN
+					</div>
+				</li>
+				<li>SPACE <div class="fix-align">- SHOOT</div>
+				</li>
+				<li>ESC <div class="fix-align-esc">- PAUSE</div>
+				</li>
+				<li>R<div class="fix-align-r">- RESTART</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Load Game Configuration -->
+	<script src="./lib/constants.js"></script>
+	<script src="./actors/actor.js"></script>
+	<script src="./actors/actor_passive.js"></script>
+	<script src="./actors/actor_active.js"></script>
+	<script src="./actors/robot.js"></script>
+	<script src="./actors/hero.js"></script>
+	<script src="./lib/game_factory.js"></script>
+	<script src="./lib/global.js"></script>
+	<script src="./lib/loderunner.js"></script>
+</body>
+
+</html>
