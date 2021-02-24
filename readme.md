@@ -6,4 +6,4 @@ I made this project for an assignment at College.
 
 I've put many hours into this, I guess it's **ok**
 
-### [Try It Out]("https://www.shitty-loadrunner.netlify.app")
+[Try It Out]("https://www.shitty-loadrunner.netlify.app")
